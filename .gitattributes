@@ -1,2 +1,14 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
+
+# Mark frontend files as vendored/documentation to exclude from language stats
+frontend/** linguist-vendored
+*.js linguist-detectable=false
+*.jsx linguist-detectable=false
+*.ts linguist-detectable=false
+*.tsx linguist-detectable=false
+*.html linguist-documentation
+*.css linguist-documentation
+
+# Force Java detection
+*.java linguist-detectable=true
